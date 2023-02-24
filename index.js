@@ -159,6 +159,7 @@ const buildTeam = () =>{
 
         
     }
+    addManager()
     
 }
 buildTeam()
