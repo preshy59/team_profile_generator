@@ -83,6 +83,39 @@ const buildTeam = () =>{
             }
         });
     }
+
+    // function that add the details of the engineer
+    function addEngineer() {
+    
+        inquirer.prompt([
+            {
+                type: 'input',
+                name: 'name',
+                message: "Enter your Engineer's Name?",
+            },
+    
+            {
+                type: 'input',
+                name: 'id',
+                message: "Enter your Engineer's ID?",
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: "Enter your Engineer's Email?",
+            },
+            {
+                type: 'input',
+                name: 'userName',
+                message: "Enter your Engineer's GitHub username?",
+            },
+    
+        ]) .then((answers) => {
+                console.log("You have successful add an Engineer");
+                team.push(new Engineer(answers.name, answers.id, answers.email, answers.userName))
+                nextStep();
+            })
+    }
     
 }
 buildTeam()
