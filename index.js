@@ -15,6 +15,39 @@ const render = require("./src/page-template.js");
 
 let team = []
 const buildTeam = () =>{
+    //function that propmt the user to enter the managers details
+    const addManager = () => {
+        inquirer.prompt([
+            {
+                type: 'input',
+                name: 'name',
+                message: "Enter your Team Managers Name?",
+            },
+    
+            {
+                type: 'input',
+                name: 'id',
+                message: "Enter your Team Managers ID?",
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: "Enter your Team Managers Email?",
+            },
+            {
+                type: 'input',
+                name: 'officeNumber',
+                message: "Enter your Team Managers Office Number?",
+            },
+    
+        ]).then((answers) => {
+            console.log("You have successful add a Manager");
+            
+        team.push(new Manager(answers.name, answers.id, answers.email, answers.officeNumber))
+    
+            nextStep();
+        })
+    }
     
 }
 buildTeam()
