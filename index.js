@@ -116,6 +116,39 @@ const buildTeam = () =>{
                 nextStep();
             })
     }
+
+    // function that add the details of the intern
+    function addIntern() {
+    
+        inquirer.prompt([
+            {
+                type: 'input',
+                name: 'name',
+                message: "Enter your Intern's Name?",
+            },
+    
+            {
+                type: 'input',
+                name: 'id',
+                message: "Enter your interns's ID?",
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: "Enter your Interns's Email?",
+            },
+            {
+                type: 'input',
+                name: 'school',
+                message: "Enter your Intern's School?",
+            },
+    
+        ]) .then((answers) => {
+                console.log("You have successful add an Intern");
+                team.push(new Intern(answers.name,answers.id, answers.email, answers.school))
+                nextStep();
+            })
+    }
     
 }
 buildTeam()
