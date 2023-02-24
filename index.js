@@ -149,6 +149,16 @@ const buildTeam = () =>{
                 nextStep();
             })
     }
+
+        // function that exist the app and write the responds to file
+    function exitApp() {
+        console.log("Hurray!!! You are done creating Team Profile");
+        let htmlDoc = render(team)
+
+        fs.writeFileSync(outputPath, htmlDoc)
+
+        
+    }
     
 }
 buildTeam()
