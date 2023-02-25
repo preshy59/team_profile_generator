@@ -4,7 +4,7 @@
 
 <!-- PROJECT TITLE -->
 
-<h3 align="center">README GENERATOR</h3>
+<h3 align="center">TEAM PROFILE GENERATOR</h3>
 
  
 
@@ -74,7 +74,7 @@ Follow the steps below to install this incridiable project:
 <!-- DEMO ON HOW THE PROJECT WORKS -->
 ## Demo
 
-[!Screenshoot description of the application](./output/images/team_profile.png)
+![Screenshoot description of the application](./output/images/team_profile.png)
 
 
 <!-- CONTRIBUTING -->
