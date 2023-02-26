@@ -1,38 +1,67 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-.employee-card{
+.employee-card {
     margin: 5px;
     list-style: none;
     font-size: 20px;
     color: rgb(219, 163, 7);
-    background-color:  rgb(10, 72, 2);
+    background-color: rgb(10, 72, 2);
 }
-.list-group-item{
+
+.list-group-item {
     font-size: 20px;
     color: rgb(219, 163, 7);
-    background-color:  rgb(10, 72, 2);
+    background-color: rgb(10, 72, 2);
     /* border: none; */
 }
 
-.team-area{
+.team-area {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.list-group-item a{
+.list-group-item a {
     color: rgb(250, 249, 248);
 }
 
-.list-group-item a:hover{
+.list-group-item a:hover {
     color: rgb(219, 163, 7);
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
-    
+
 }
 
-.container{
+.container {
     background-color: white;
+}
+
+.team-heading {
+    background-color: inherit;
+    height: 100px;
+    padding: 0;
+    padding-top: 10px;
+    
+
+}
+
+.team-heading h1 {
+    color: rgb(10, 72, 2);
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.container-fluid {
+    background-color: rgb(228, 224, 220);
+    margin-bottom: 20px;
+}
+
+.sub-heading {
+
+    height: 100px;
+    margin: 0;
+    padding: 0;
 }
