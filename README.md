@@ -75,6 +75,7 @@ Follow the steps below to install this incridiable project:
 ## Demo
 
 ![Screenshoot description of the application](./output/images/team_profile.png)
+![Video Demonstration of the application](./output/video/video_demo.gif)
 
 
 <!-- CONTRIBUTING -->
